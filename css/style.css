@@ -60,7 +60,6 @@ a {
 .webstudio-down {
     display: block;
     font-family: 'Raleway';
-    margin-top: 60px;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -102,6 +101,9 @@ a {
 .second-page-button button:hover {
     background: var(--hover);
     color: var(--pure-white);
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.12),
+                0px 1px rgba(0, 0, 0, 0.08),
+                0px 3px rgba(0, 0, 0, 0.1);
 }
 
 .lorem-ipsum h6 {
@@ -174,7 +176,6 @@ img {
 .container {
     max-width: 1200px;
     padding: 0 15px;
-    align-items: center;
     margin: 0 auto;
 }
 
@@ -214,7 +215,7 @@ header .container {
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                         url("./images/tło.jpg");
+                         url("/images/tło.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
@@ -302,6 +303,7 @@ h3 {
     text-align: center;
     margin-top: 94px;
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 .second-button {
@@ -317,7 +319,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 82px;
-}
+} 
 
 .pictures:hover {
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
@@ -358,7 +360,7 @@ h5 {
 }
 
 footer {
-    height: 252px;
+padding: 60px 0;
 }
 
 address {
@@ -368,7 +370,7 @@ address {
 
 .contacts-address,
 .contacts-email {
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .contacts-email,
@@ -417,10 +419,10 @@ address {
     margin: 12px;
 }
 
-.social-list-item-menu:hover {
+/* .social-list-item-menu:hover {
    color: var(--hover);
    fill: var(--hover);
-}
+} */
 
 .contacts {
     display: flex;
@@ -542,16 +544,16 @@ address {
     align-items: center;
     justify-content: center;
     fill: #FFFFFF;
-}
-
-.join-us {
     background-color: rgba(255, 255, 255, 0.1);
-    align-items: center;
-    justify-content: center;
-    display: flex;
     height: 44px;
     width: 44px;
     border-radius: 50%;
+}
+
+.join-us {
+    align-items: center;
+    justify-content: center;
+    display: flex; 
 }
 
 .join-us-list {
@@ -559,8 +561,12 @@ address {
     gap: 10px;
 }
 
-.join-us:hover {
+.join-us-footer:hover {
     background-color: var(--hover);
+}
+
+.join-us-footer:hover svg{
+   fill: #fff;
 }
 
 .contact-2 a {
@@ -571,20 +577,18 @@ address {
 }
 
 .join-us-icons {
-    min-height: 252px; 
     justify-content: flex-start;
     margin-left: 70px;
 }
 
 .join-us-title {
-    margin-top: 72px;
+    margin-top: 12px;
     margin-bottom: 20px;
-    font-weight: 700px; 
+    font-weight: 700; 
     font-size: 14px; 
     line-height: 16.41px;
 } 
 
 .page-footer{
-    min-height: 252px;
     justify-content: flex-start;
     }
